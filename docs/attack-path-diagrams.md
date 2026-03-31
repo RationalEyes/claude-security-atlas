@@ -180,28 +180,32 @@ flowchart TD
 
 Visual risk assessment for all taxonomy vectors. Axes: Attack Complexity (horizontal) vs. Risk Rating (vertical). Detection Difficulty shown in node labels.
 
+All 12 SKI vectors are rated CRITICAL (8) or HIGH (4) — none are MEDIUM or LOW, so the bottom quadrants are intentionally empty. This reflects the severity of the skills attack surface: every vector is high-impact.
+
 ```mermaid
 quadrantChart
-    title Skill Injection Risk Matrix - Attack Complexity vs Risk Level
+    title SKI Risk Matrix
     x-axis Low Complexity --> High Complexity
-    y-axis Lower Risk --> Higher Risk
-    quadrant-1 Critical Priority
-    quadrant-2 High Priority, Easy to Deploy
-    quadrant-3 Monitor
-    quadrant-4 High Priority, Sophisticated
-    SKI-001 Content Poisoning: [0.15, 0.95]
-    SKI-003 Persistence: [0.15, 0.90]
-    SKI-012 Auth Paradox: [0.10, 0.98]
-    SKI-007 Metadata Manip: [0.20, 0.70]
-    SKI-002 Trigger Hijack: [0.20, 0.65]
-    SKI-008 Supply Chain: [0.45, 0.92]
-    SKI-011 Skill-as-C2: [0.50, 0.88]
-    SKI-004 Script Compromise: [0.45, 0.95]
-    SKI-006 Skill Chaining: [0.75, 0.72]
-    SKI-009 Multi-Agent Prop: [0.80, 0.90]
-    SKI-005 Context Poisoning: [0.78, 0.95]
-    SKI-010 Cache Poisoning: [0.82, 0.68]
+    y-axis HIGH Risk --> CRITICAL Risk
+    quadrant-1 Urgent
+    quadrant-2 Act Now
+    quadrant-3 Prioritize
+    quadrant-4 Plan
+    SKI-012 Auth Paradox: [0.10, 0.90]
+    SKI-001 Content Poisoning: [0.15, 0.82]
+    SKI-003 Persistence: [0.20, 0.75]
+    SKI-002 Trigger Hijack: [0.22, 0.30]
+    SKI-007 Metadata Manip: [0.25, 0.38]
+    SKI-008 Supply Chain: [0.42, 0.80]
+    SKI-004 Script Compromise: [0.48, 0.88]
+    SKI-011 Skill-as-C2: [0.52, 0.72]
+    SKI-005 Context Poisoning: [0.72, 0.85]
+    SKI-009 Multi-Agent Prop: [0.80, 0.78]
+    SKI-006 Skill Chaining: [0.70, 0.35]
+    SKI-010 Cache Poisoning: [0.82, 0.28]
 ```
+
+**Legend:** Upper half = CRITICAL risk rating. Lower half = HIGH risk rating. All SKI vectors are at least HIGH severity.
 
 ---
 
@@ -483,28 +487,32 @@ flowchart TD
 
 Visual risk assessment for all WCI taxonomy vectors. Axes: Attack Complexity (horizontal) vs. Risk Rating (vertical).
 
+WCI vectors span the full risk range: 2 CRITICAL, 6 HIGH, 3 MEDIUM, 1 LOW.
+
 ```mermaid
 quadrantChart
-    title Web Content Injection Risk Matrix - Attack Complexity vs Risk Level
+    title WCI Risk Matrix
     x-axis Low Complexity --> High Complexity
-    y-axis Lower Risk --> Higher Risk
-    quadrant-1 Critical Priority
-    quadrant-2 High Priority, Easy to Deploy
+    y-axis LOW/MEDIUM Risk --> HIGH/CRITICAL Risk
+    quadrant-1 Urgent
+    quadrant-2 Act Now
     quadrant-3 Monitor
-    quadrant-4 High Priority, Sophisticated
+    quadrant-4 Plan
     WCI-004 Authority Spoofing: [0.15, 0.95]
-    WCI-001 HTML Comments: [0.15, 0.78]
-    WCI-002 CSS Hidden Text: [0.18, 0.76]
-    WCI-011 Alt-Text EXIF: [0.20, 0.55]
-    WCI-009 SEO Poisoning: [0.48, 0.92]
-    WCI-005 Markdown Inject: [0.42, 0.75]
-    WCI-008 Poisoned JSON-LD: [0.45, 0.77]
-    WCI-003 Encoded Payloads: [0.45, 0.58]
-    WCI-007 Unicode Obfusc: [0.50, 0.78]
-    WCI-010 Dynamic JS: [0.55, 0.60]
-    WCI-012 Header Inject: [0.48, 0.35]
-    WCI-006 Multi-Page Chain: [0.80, 0.80]
+    WCI-001 HTML Comments: [0.15, 0.72]
+    WCI-002 CSS Hidden Text: [0.20, 0.68]
+    WCI-011 Alt-Text EXIF: [0.22, 0.35]
+    WCI-009 SEO Poisoning: [0.48, 0.90]
+    WCI-005 Markdown Inject: [0.42, 0.65]
+    WCI-008 Poisoned JSON-LD: [0.48, 0.70]
+    WCI-003 Encoded Payloads: [0.45, 0.38]
+    WCI-007 Unicode Obfusc: [0.52, 0.72]
+    WCI-010 Dynamic JS: [0.55, 0.40]
+    WCI-012 Header Inject: [0.48, 0.15]
+    WCI-006 Multi-Page Chain: [0.82, 0.75]
 ```
+
+**Legend:** CRITICAL = top 25% (WCI-004, WCI-009). HIGH = 50-75% (WCI-001, 002, 005, 006, 007, 008). MEDIUM = 25-50% (WCI-003, 010, 011). LOW = bottom 25% (WCI-012).
 
 ---
 
