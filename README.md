@@ -58,6 +58,33 @@
 
 ---
 
+## Core Documents
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📖 Technical Manual
+
+The complete technical guide — architecture deep dives, all 24 attack vectors with code walkthroughs, 5-layer defense architecture, regulatory context, and actionable recommendations.
+
+**[Read online](docs/technical-manual.md)** &nbsp; | &nbsp; **[Download PDF](docs/technical-manual.pdf)**
+
+</td>
+<td width="50%" valign="top">
+
+### 📋 Executive Summary
+
+Non-technical overview for security leadership and governance audiences. Key statistics, risk assessment, and prioritized recommendations across both attack surfaces.
+
+**[Read online](docs/executive-summary.md)** &nbsp; | &nbsp; **[Download PDF](docs/executive-summary.pdf)**
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Modules
 
 | Module | Status | Attack Surface | Vectors | Defense Skills |
@@ -246,8 +273,6 @@ See [`web-content/test-pages/README.md`](web-content/test-pages/README.md) for t
 | 🌐 [`docs/platform-dimensions.md`](docs/platform-dimensions.md) | Platform security comparison — Claude Web vs Cowork vs Code | — |
 | 📊 [`docs/attack-path-diagrams.md`](docs/attack-path-diagrams.md) | 13 Mermaid diagrams: attack paths, defense layers, risk matrices | [PDF](docs/attack-path-diagrams.pdf) |
 | 📋 [`docs/executive-summary.md`](docs/executive-summary.md) | Non-technical summary for leadership and governance audiences | [PDF](docs/executive-summary.pdf) |
-| 💼 LinkedIn Article | Thought leadership on Claude Skills security risks | [PDF](docs/linkedin-article.pdf) |
-
 ---
 
 ## Key References
