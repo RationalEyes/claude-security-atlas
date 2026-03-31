@@ -182,13 +182,13 @@ Visual risk assessment for all taxonomy vectors. Axes: Attack Complexity (horizo
 
 ```mermaid
 quadrantChart
-    title Skill Injection Risk Matrix — Attack Complexity vs Risk Level
+    title Skill Injection Risk Matrix - Attack Complexity vs Risk Level
     x-axis Low Complexity --> High Complexity
     y-axis Lower Risk --> Higher Risk
     quadrant-1 Critical Priority
-    quadrant-2 High Priority — Easy to Deploy
+    quadrant-2 High Priority, Easy to Deploy
     quadrant-3 Monitor
-    quadrant-4 High Priority — Sophisticated
+    quadrant-4 High Priority, Sophisticated
     SKI-001 Content Poisoning: [0.15, 0.95]
     SKI-003 Persistence: [0.15, 0.90]
     SKI-012 Auth Paradox: [0.10, 0.98]
@@ -485,13 +485,13 @@ Visual risk assessment for all WCI taxonomy vectors. Axes: Attack Complexity (ho
 
 ```mermaid
 quadrantChart
-    title Web Content Injection Risk Matrix — Attack Complexity vs Risk Level
+    title Web Content Injection Risk Matrix - Attack Complexity vs Risk Level
     x-axis Low Complexity --> High Complexity
     y-axis Lower Risk --> Higher Risk
     quadrant-1 Critical Priority
-    quadrant-2 High Priority — Easy to Deploy
+    quadrant-2 High Priority, Easy to Deploy
     quadrant-3 Monitor
-    quadrant-4 High Priority — Sophisticated
+    quadrant-4 High Priority, Sophisticated
     WCI-004 Authority Spoofing: [0.15, 0.95]
     WCI-001 HTML Comments: [0.15, 0.78]
     WCI-002 CSS Hidden Text: [0.18, 0.76]
