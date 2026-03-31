@@ -1,0 +1,3 @@
+# Classify HTML test pages as non-code so GitHub language stats
+# reflect the actual project technologies (Python, Markdown, Shell)
+web-content/test-pages/*.html linguist-documentation
